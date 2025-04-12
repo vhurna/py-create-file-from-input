@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     # Запитуємо користувача ввести ім'я файлу (без розширення)
     filename = input("Enter name of the file: ").strip()
     full_filename = filename + ".txt"
@@ -17,7 +17,7 @@ def main():
             file.write(content + "\n")
 
     # Виводимо результат
-    print(f"# File name: \"{full_filename}\"")
+    print(f'# File name: "{full_filename}"')
     print("# File content:")
     for content in content_lines:
         print(f"# {content}")
